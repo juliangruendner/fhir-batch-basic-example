@@ -1,0 +1,9 @@
+fhir:
+  input:
+    url: http://localhost:8081/fhir
+  output:
+    url: http://localhost:8082/fhir
+  exampleFhirConfig: test
+data:
+  outputFileDirectory: ./test
+  writeBundlesToFile: false
