@@ -6,4 +6,4 @@ fhir:
   exampleFhirConfig: test
 data:
   outputFileDirectory: ./test
-  writeBundlesToFile: false
+  writeBundlesToFile: true

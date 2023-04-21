@@ -83,7 +83,7 @@ public class BatchConfiguration {
   @Bean
   public Step step1(JobRepository jobRepository,
       PlatformTransactionManager transactionManager,
-      FhirBundleProcessor processor) throws IOException {
+      FhirBundleProcessor processor) {
     return new StepBuilder("step1", jobRepository)
         .<Bundle, Bundle> chunk(1, transactionManager)
         .reader(reader())
